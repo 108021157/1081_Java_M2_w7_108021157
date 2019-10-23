@@ -3,9 +3,11 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        int sum = 0;
-        for (int s = 1; s <= 100; s++) {
-            sum = sum + s;
+        Scanner a=new Scanner(System.in);
+        int s=a.nextInt();
+        int sum=0;
+        for (int d=3;d<=s;d+=3){
+            sum=sum+d;
         }
         System.out.println(sum);
     }
