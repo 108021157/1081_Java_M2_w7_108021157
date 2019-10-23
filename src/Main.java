@@ -6,7 +6,7 @@ public class Main {
         int sum = 0;
         for (int s = 1; s <= 100; s++) {
             sum = sum + s;
-            System.out.println(sum);
         }
+        System.out.println(sum);
     }
 }
