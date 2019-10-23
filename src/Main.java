@@ -4,11 +4,19 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner a=new Scanner(System.in);
-        int s=a.nextInt();
-        int sum=0;
-        for (int d=3;d<=s;d+=3){
-            sum=sum+d;
+        float z=a.nextFloat();
+        float max=z;
+        float min=z;
+        for (int s=1;s<10;s++){
+            z=a.nextFloat();
+            if (max<z){
+                max=z;
+            }
+            else if (min>z){
+                min=z;
+            }
         }
-        System.out.println(sum);
+        System.out.printf("max=%.2f\n",max);
+        System.out.printf("min=%.2f\n",min);
     }
 }
