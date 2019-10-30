@@ -3,20 +3,13 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner a = new Scanner(System.in);
-        int s = a.nextInt();
-        int d = s / 2;
-        boolean flag = true;
-        for (int x = 2; x <= d; x++) {
-            if (s % x == 0) {
-                flag = false;
+        Scanner a=new Scanner(System.in);
+        int n=a.nextInt();
+        for (int s=1;s<=n;s++){
+            for (int d=1;d<=s;d++){
+                System.out.print("*");
             }
-                if (flag) {
-                    System.out.println("yes");
-                } else {
-                    System.out.println("no");
-                }
-            }
+            System.out.println();
         }
     }
-
+}
