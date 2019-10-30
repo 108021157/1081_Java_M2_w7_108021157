@@ -3,16 +3,23 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner a=new Scanner(System.in);
-        int n=a.nextInt();
-        for (int s=1;s<=n;s++){
-            for(int d=n;d>s;d--) {
-                System.out.print(" ");
+        Scanner a = new Scanner(System.in);
+        int s=a.nextInt();
+        int z=0,x=0,c=0;
+        while (s!=-999){
+            if(s>0){
+                z++;
             }
-                for (int f=1;f<=2*s-1;f++){
-                System.out.print("*");
+            else if (s==0){
+                x++;
             }
-            System.out.println();
+            else {
+                c++;
+            }
+            s=a.nextInt();
         }
+        System.out.println(z);
+        System.out.println(x);
+        System.out.println(c);
     }
 }
