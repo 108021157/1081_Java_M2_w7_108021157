@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Ｍ２Ｑ９ {
 
     public static void main(String[] args) {
         Scanner a = new Scanner(System.in);
