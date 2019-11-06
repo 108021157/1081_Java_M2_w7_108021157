@@ -4,18 +4,14 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner a = new Scanner(System.in);
-        int s = a.nextInt();
-        int d = a.nextInt();
-        int z = Math.max(s, d);
-        int x = Math.min(s, d);
-        while (true) {
-            if (z % x == 0) {
-                break;
-            }
-            int tmp = z % x;
-            z = x;
-            x = tmp;
+        long s=a.nextLong();
+        int sum=0;int d=0;
+        while (s>0){
+            d++;
+            sum+=s%10;
+            s=s/10;
         }
-        System.out.println(x);
+        System.out.println(d);
+        System.out.println(sum);
     }
 }
