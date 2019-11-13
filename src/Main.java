@@ -6,7 +6,7 @@ public class Main {
         Scanner a=new Scanner(System.in);
         int s=a.nextInt();
         int z=1,x=1;
-        while (z<s){
+        while (z<=s){
             System.out.print(z+"\t");
             z=z+x;
             x++;
