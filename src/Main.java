@@ -12,5 +12,12 @@ public class Main {
             x++;
         }
         System.out.println(z);
+        z=1;
+        while (z<=s+1){
+            for(int c=1;c<=z;c++){
+                System.out.print(z+"\t");
+            }
+            z++;
+        }
     }
 }
